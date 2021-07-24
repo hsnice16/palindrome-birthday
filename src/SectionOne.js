@@ -8,7 +8,7 @@ export default function SectionOne() {
       <div className="GithubRepoLinkContainer">
         <div className="GithubIconContainer">
           <a
-            href="https://github.com/hsnice16"
+            href="https://github.com/hsnice16/palindrome-birthday"
             target="_blank"
             rel="noreferrer"
           >
