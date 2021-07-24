@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+:root {
+  --blue-200: #bfdbfe;
+  --blue-600: #2563eb;
+  --gray-50: #f9fafb;
+  --green-500: #10b981;
+  --green-600: #059669;
+  --purple-600: #9333ea;
+  --red-600: #dc2626;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--gray-50);
+}
+
+.App {
+  font-family: "Work Sans", sans-serif;
+}
+
+.SectionOne .GithubRepoLinkContainer {
+  border-bottom: 2px solid var(--blue-600);
+  box-shadow: 0 1px 5px var(--blue-200);
+}
+
+.GithubRepoLinkContainer .GithubIconContainer {
+  padding: 1rem;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+  border-left: 2px solid var(--blue-600);
+}
+
+.SectionOne .GithubRepoLinkContainer .GithubIcon {
+  font-size: 2rem;
+  color: var(--green-600);
+}
+
+.SectionOne .ImageNTextContainer,
+.SectionTwo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.SectionOne .ImageNTextContainer {
+  flex-wrap: wrap;
+}
+
+.SectionTwo {
+  flex-wrap: wrap-reverse;
+}
+
+.SectionOne .ImageNTextContainer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.SectionTwo {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.SectionOne .ImageNTextContainer :is(.ImageContainer, .TextContainer),
+.SectionTwo :is(.TextContainer, .ImageContainer) {
+  max-width: 35rem;
+}
+
+.SectionOne img,
+.SectionTwo img {
+  max-width: 370px;
+  height: auto;
+}
+
+.SectionOne .ImageNTextContainer .TextContainer,
+.SectionTwo .TextContainer {
+  padding: 0.3rem 1rem;
+}
+
+.SectionTwo .TextContainer {
+  padding-bottom: 2rem;
+}
+
+.SectionOne .ImageNTextContainer .TextContainer h3 {
+  font-size: 3.1rem;
+  margin-block-end: 0;
+  color: var(--blue-600);
+}
+
+.SectionTwo .TextContainer h3 {
+  font-size: 2.3rem;
+  color: var(--blue-600);
+}
+
+.SectionOne .ImageNTextContainer .TextContainer h3 span,
+.SectionTwo .TextContainer h3 span {
+  color: var(--green-600);
+}
+
+.SectionOne .ImageNTextContainer .TextContainer p {
+  font-size: 1.2rem;
+  color: var(--blue-600);
+}
+
+.SectionTwo .TextContainer p {
+  font-size: 1.1rem;
+  color: var(--blue-600);
+  margin: 1.4rem 0;
+}
+
+.SectionOne .ImageNTextContainer .TextContainer button,
+.SectionTwo .TextContainer button {
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid var(--green-600);
+  background-color: var(--green-600);
+  color: white;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+}
+
+.SectionOne .ImageNTextContainer .TextContainer button:hover,
+.SectionTwo .TextContainer button:hover {
+  background-color: var(--green-500);
+}
+
+.SectionTwo .TextContainer button {
+  margin: 1rem 0;
+}
+
+#birthday-input {
+  display: block;
+  font-size: 1.2rem;
+  font-family: monospace;
+  margin: 1rem auto;
+  border-radius: 15px;
+  border: 2px solid var(--green-600);
+  padding: 0.2rem 0.5rem;
+}
+
+#birthday-input:focus {
+  outline: none;
+}
+
+.SectionTwo .TextContainer .GiClickIcon {
+  vertical-align: middle;
+}
+
+.SectionTwo .TextContainer .ResponseText {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+.SectionTwo .TextContainer .ResponseText.IsPalindrome {
+  color: var(--purple-600);
+  border: 1px solid var(--purple-600);
+}
+
+.SectionTwo .TextContainer .ResponseText.IsNotPalindrome {
+  color: var(--red-600);
+  border: 1px solid var(--red-600);
+}
+
+.Footer {
+  color: var(--blue-600);
+  border-top: 2px solid var(--blue-600);
+  box-shadow: 0 -1px 5px var(--blue-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.Footer .Icon {
+  font-size: 2rem;
+  color: var(--green-600);
+}
+
+.Footer .Icon:hover {
+  transform: scale(1.1);
+}
+
+/* list */
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+/*  */
